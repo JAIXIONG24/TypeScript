@@ -43,6 +43,18 @@ function throwError(): never{
     throw new Error();
 }
 
+/*
+配列
+配列リテラル
+配列の値を作るには配列リテラル([])を使う。
+[要素1, 要素2, ...]の形で配列の初期値を設定できる。
+*/
+
+const numbers = [1, 2, 3];
+ 
+for (const num of numbers) {
+  console.log(num); // 1, 2, 3と出力される
+}
 
 
 function add(a : number, b : number): number{
