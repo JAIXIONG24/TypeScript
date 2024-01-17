@@ -97,6 +97,64 @@ const { subject, math_score } = obj;
 console.log(subject);
 console.log(math_score);
 
+/*
+オブジェクトメソッド
+関数をプロパティに持つオブジェクトを定義できる。
+*/
+
+const obj1 = {
+    score1: 1,
+    score2: 2,
+    sum(): number {
+        return this.score1 + this.score2;
+    },
+  };
+  console.log(obj1.sum());
+
+/*
+Mapオブジェクト
+Mapオブジェクトはキーとそれに対応する値を対にしたコレクション。
+キーはオブジェクトも含め任意の値が可能。
+*/
+
+const map = new Map();
+map.set("name", "John");
+map.set("age", "20");
+console.log(map.get("name")); // => 'John'
+
+let people: Map<string, number>;
+
+for (const [key, value] of map) {
+    console.log(key, value);
+}
+
+/*
+クラス
+クラス構文
+*/
+
+class Person {
+    name: string;
+    age1: number;
+   
+    constructor(name: string, age1: number) {
+      this.name = name;
+      this.age1 = age1;
+    }
+   
+    introduce(): void {
+      console.log(`My name is ${this.name} and I am ${this.age1} years old.`);
+    }
+  }
+  const john = new Person("John", 20);
+  john.introduce();
+
+  
+
+
+
+
+
 
 
 
