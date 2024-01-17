@@ -56,6 +56,51 @@ for (const num of numbers) {
   console.log(num); // 1, 2, 3と出力される
 }
 
+/*
+条件分岐
+TypeScriptではJavaScriptと同様に、条件分岐にはif構文やswitch構文が利用できる。
+*/
+
+const score: number = 20;
+
+if (score >= 20) {
+    console.log("この結果はif文の結果です。");
+} else {
+    console.log("この結果はelse文の結果です。");
+}
+
+// switch 文
+
+const color: string = "red";
+ 
+switch (color) {
+    case "red":
+        console.log("色は赤いです。");
+        break;
+
+    case "blue":
+        console.log("色は青いです。");
+        break;
+
+    default:
+        console.log("色は赤いと青いと違う色です。");
+}
+ 
+// 分割代入により、オブジェクトのプロパティを個別の変数へ代入できる(オブジェクトの分割代入)。
+
+const obj = {
+    subject: "Math",
+    math_score: 20,
+};
+   
+const { subject, math_score } = obj;
+console.log(subject);
+console.log(math_score);
+
+
+
+
+
 
 function add(a : number, b : number): number{
     return a + b;
